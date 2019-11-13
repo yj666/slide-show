@@ -1,0 +1,85 @@
+.hide {
+    display: none;
+}
+.menu-content {
+    height: 100px;
+    border: 1px solid red;
+}
+.item {
+    /*display: inline-block;*/
+    /*opacity: 0.6;*/
+    filter: grayscale(100%);
+}
+.item.highlight {
+    filter: initial;
+    /*opacity: 1;*/
+}
+.item.highlight img {
+    width: 150px;
+    height: 150px;
+}
+img {
+    /*transition 这个 css 指定了某个属性发生变化的时候自动使用动画效果和动画时间*/
+    transition: width 1s, height 1s;
+}
+.item img {
+    width: 100px;
+    height: 100px;
+}
+
+/*3. 轮播图*/
+.slide {
+    position: relative;
+    width: 800px;
+}
+.slide-image {
+    display: none;
+    cursor: pointer;
+}
+/*slide-image*/
+.active {
+    display: inline-block;
+}
+.slide-button {
+    width: 24px;
+    height: 30px;
+    color: #fff;
+    background: #000;
+    opacity: 0.3;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.slide-left {
+    left: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.slide-right {
+    right: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+}
+.slide-indicators {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+.slide-indi {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,.05);
+    background: rgba(255,255,255,.4);
+}
+.white {
+    background: white;
+}
